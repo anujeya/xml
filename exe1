@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE student SYSTEM "ex1.dtd">
+<student>
+<text1>Anu priya</text1>
+<text2>anupriyaj0998@gmail.com</text2>
+<text3>201603008</text3>
+</student>
+
+DTD:
+<!ELEMENT student (text1,text2,text3)>
+<!ELEMENT text1 (#PCDATA)>
+<!ELEMENT text2 (#PCDATA)>
+<!ELEMENT text3 (#PCDATA)>
