@@ -1,0 +1,40 @@
+CSS:
+employee
+{
+background-color: red;
+}
+text1,text2,text3,text4
+{
+font-size:20px;
+display:block;
+color: navy blue;
+margin-left: 50px;
+}
+heading
+{
+font-size:35px;
+display:block;
+color:pink;
+}
+DTD:
+<!ELEMENT employee (text1,text2,text3,text4)>
+<!ELEMENT text1 (#PCDATA)>
+<!ELEMENT text2 (#PCDATA)>
+<!ELEMENT text3 (#PCDATA)>
+<!ELEMENT text4 (#PCDATA)>
+XML:
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="ex2.css"?>
+<!DOCTYPE employee SYSTEM "ex2.dtd">
+<employee>
+<heading>LIST OF STUDENTS</heading>
+<br />
+<br><text1>anu priya</text1> <br/>
+<br><text2>mathu mathi</text2> <br/>
+<text3>laaranya</text3>
+<text4>sangee</text4>
+
+<heading>SELECTED CANDIDATES</heading>
+<text1>mathu mathi</text1>
+<text2>laaranya</text2>
+</employee>
